@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/h-icon" href="images/IconoH.ico">
+    <title>Avícola El Manantial</title>
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Estilos -->
+    <link href="css/BaseDC.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+
+  <body class="d-flex h-100 text-center text-white bg-secondary">
+
+    <div class="cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
+
+      <header class="mb-auto">
+        <div>
+          <h2>Avícola El Manantial</h2>
+          <h4>Libre y nutritivo por naturaleza</h4>
+          <br>
+        </div>
+      </header>
+
+      <main class="px-3">
+        <h3>Información de contacto</h3>
+        <p class="lead">Para la coordinación de pedidos, puedes comunicarte a los siguientes números telefónicos:</p>
+        <p class="lead"> <img src="images/T01.jfif" class="img-fluid" alt="T01"> </p>
+        <p class="lead"> <img src="images/T02.jfif" class="img-fluid" alt="T02"> </p>
+        <p class="lead"> <a target="_blank" href="https://www.instagram.com/avicola_manantial/" class="btn btn-lg btn-primary fw-bold border-white bg-white">@avicola_manantial</a> </p>
+        <br>
+        <h3>Mas que vender huevos...</h3>
+        <h3>¡Llevamos la salud a tu mesa!</h3>
+        <p class="lead">Huevitos frescos, de gallinas de pastoreo.</p>
+        <p class="lead">¡Producto del campo colombiano!</p>
+        <br>
+        <h4>Calidad y Sabor</h4>
+        <p class="lead"> <canvas class="bg-white" id="Gr1" width="300" height="200"> </canvas> </p>
+        <br>
+        <h4>A continuación, veamos un video …</h4>
+        <p class="lead"> <iframe class="bg-white" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Festiwargoficial%2Fvideos%2F484600923460120%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:5px solid white;overflow:hidden" scrolling="no" frameborder="" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> </p>
+        <h4>De todo corazón, ¡Muchas gracias por tu apoyo!</h4>
+        <br>
+        <p class="lead"> <img src="images/IMG01.jpg" class="img-fluid" alt="IM01"> </p>
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <br>
+        <p>Avícola El Manantial</p>
+        <p>Apoya el desarrollo economico local, ¡Dale una mano al campo colombiano!</p>
+        <p>Año 2022.</p>
+      </footer>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+  <script>
+    var ctx=document.getElementById("Gr1").getContext("2d");
+    var MGr1=new Chart(ctx,
+    {
+        type:"polarArea",
+        data:
+        {
+          labels:['Satisfacción TOTAL - Presiona F5'],
+          datasets:
+          [{
+              label:'Areas',
+              data:[100],
+              backgroundColor:
+              [
+                  'rgb(50,255,50,0.4)'
+              ],
+              borderColor: 
+              [
+                'rgb(50,126,50)'
+              ],
+              borderWidth: 2
+          }]
+        },
+    });
+  </script>
+
+</html>
