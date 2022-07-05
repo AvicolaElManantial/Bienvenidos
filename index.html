@@ -23,21 +23,29 @@
           <p class="lead"> 
             <iframe src="https://free.timeanddate.com/clock/i8dpti97/n41/tlco4/fn14/fs18/fcfff/tct/pct/tt0/td2/th2/ts1/tb4" frameborder="0" width="296" height="46" allowtransparency="true"></iframe>
           </p>
-          <p class="lead">
-            <img src="images/LogoHuevo.jpg" class="img-fluid" alt="LH01">
-            <h1 style="color:#7DBB18">Avícola El Manantial</h1>
-            <h2 style="color:#7DBB18">Libre y nutritivo por naturaleza</h2>
-            <br>
-            <img src="images/GPE.gif" class="img-fluid" alt="GPE01" border="5px">
-          </p>
           <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-2 text-center">
+                <p class="lead"> <img src="images/LogoHuevo.jpg" class="img-fluid" alt="LH01"> </p>
+              </div>
+              <div class="col-12 col-md-10 text-center text-md-left align-self-md-center ">
+                <h1 style="color:#7DBB18">Avícola El Manantial</h1>
+                <h2 style="color:#7DBB18">Libre y nutritivo por naturaleza</h2>
+              </div>
+            </div>
+          </div>
+          <br>
+          <p class="lead"> <img src="images/GPE.gif" class="img-fluid" alt="GPE01" border="5px"> </p>
         </div>
       </header>
 
       <main class="px-3">
+        <br>
         <h1 style="color:#FFDE59">¡Hola!</h1>
         <h2 style="color:#FFDE59">Tenemos una oferta especial para ti ...</h2>
         <p class="lead"> <img src="images/Promo1.jpg" class="img-fluid" alt="P01"> </p>
+        <br>
         <h2>Información de contacto</h2>
         <p class="lead">Para la coordinación de pedidos, puedes comunicarte a los siguientes números telefónicos:</p>
         <p class="lead"> <img src="images/T01.jfif" class="img-fluid" alt="T01"> </p>
@@ -61,8 +69,8 @@
           <h3 style="color:#002E83">del campo</h3>
           <h3 style="color:#C20F2D">colombiano</h3>
         </p>
-        <br>
-         <p class="lead">
+        <p class="lead">
+          <br>
           <h3>Clientes Amigos:</h3>
           <h4>Ayúdanos a conocerte,</h4>
           <h4>para ofrecerte un mejor servicio,</h4>
@@ -72,8 +80,7 @@
           <a target="_blank" href="https://ee.humanitarianresponse.info/x/RFZJrqaF" class="btn btn-lg btn-primary fw-bold border-white bg-white">¡ inscríbete !</a> 
         </p>
         <br>
-        <h4 style="color:#A1FFA1">Calidad y Sabor</h4>
-        <p class="lead"> <canvas class="bg-white" id="Gr1" width="300" height="200"> </canvas> </p>
+        <h4 style="color:#FFDE59">Calidad y Sabor</h4>
         <br>
         <h4>A continuación, veamos algunos videos …</h4>
         <p class="lead"> <iframe class="bg-white" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Festiwargoficial%2Fvideos%2F484600923460120%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:5px solid white;overflow:hidden" scrolling="no" frameborder="" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> </p>
@@ -98,31 +105,5 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
   </body>
-
-  <script>
-    var ctx=document.getElementById("Gr1").getContext("2d");
-    var MGr1=new Chart(ctx,
-    {
-        type:"polarArea",
-        data:
-        {
-          labels:['Satisfacción TOTAL'],
-          datasets:
-          [{
-              label:'Areas',
-              data:[100],
-              backgroundColor:
-              [
-                  'rgb(50,255,50,0.4)'
-              ],
-              borderColor: 
-              [
-                'rgb(50,126,50)'
-              ],
-              borderWidth: 2
-          }]
-        },
-    });
-  </script>
 
 </html>
