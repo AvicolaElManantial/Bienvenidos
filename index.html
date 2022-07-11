@@ -51,14 +51,17 @@
         <p class="lead"> <img src="images/T01.jfif" class="img-fluid" alt="T01"> </p>
         <p class="lead"> <img src="images/T02.jfif" class="img-fluid" alt="T02"> </p>
         <p class="lead">Tiempo para la realizacion de pedidos</p>
-        <p class="lead">Semana del 04 al 08 de Julio de 2022:</p>
+        <p class="lead">Semana del 11 al 15 de Julio de 2022:</p>
         <p class="lead"> 
-          <iframe src="https://free.timeanddate.com/countdown/i8eg5g9w/n41/cf13/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacffde59/cpcfff/pct/tcfff/fs100/szw320/szh135/iso2022-07-08T18:00:00/pl10/pr10/pt10/pb10" allowtransparency="true" frameborder="0" width="92" height="96"></iframe>
+          <iframe src="https://free.timeanddate.com/countdown/i8es7l7t/n41/cf13/cm0/cu4/ct4/cs1/ca0/co0/cr0/ss0/cacffde59/cpcffde59/pct/tcfff/fs100/szw448/szh189/iso2022-07-15T18:00:00/bls5/blt0/brs5/brt0/bts5/btt0/bbs5/bbcffde59/pl5/pr5/pt5/pb5" allowtransparency="true" frameborder="0" width="111" height="123"></iframe>
         </p>
         <p class="lead">
           <img src="images/LI01.png" class="img-fluid" alt="LI01">
           <a target="_blank" href="https://www.instagram.com/avicola_manantial/" class="btn btn-lg btn-primary fw-bold border-white bg-white">@avicola_manantial</a> 
         </p>
+        <br>
+        <h3>Nuestras tendencias de producción de la semana:</h3>
+        <p class="lead"> <canvas class="bg-white" id="TendProd" width="300" height="200"> </canvas> </p>
         <br>
         <h3>Mas que vender huevos...</h3>
         <h3>¡ Llevamos la salud a tu mesa !</h3>
@@ -79,6 +82,11 @@
           <img src="images/NotaF.png" class="img-fluid" alt="NF01" width="60" height="80">
           <a target="_blank" href="https://ee.humanitarianresponse.info/x/RFZJrqaF" class="btn btn-lg btn-primary fw-bold border-white bg-white">¡ inscríbete !</a> 
         </p>
+        <h3>Ya somos varios ...</h3>
+        <h4>¡ Únete a nuestros amigos !</h4>
+        <p class="lead"> <img src="images/DobleYema.jpg" class="img-fluid" alt="DY01" width="350" height="500"> </p>
+        <p class="lead">Como diría alguien, ¡POSITIVO PARA FRESCO!</p>
+        <p class="lead">Doble yema, doble felicidad.</p>
         <br>
         <h4 style="color:#FFDE59">Calidad y Sabor</h4>
         <br>
@@ -86,6 +94,16 @@
         <p class="lead"> <iframe class="bg-white" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Festiwargoficial%2Fvideos%2F484600923460120%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:5px solid white;overflow:hidden" scrolling="no" frameborder="" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> </p>
         <h4>... ¡ Y llegaron nuevas gallinitas ! ...</h4>
         <p class="lead"> <iframe class="bg-white" src="images/NCJN22.mp4" width="267" height="591" style="border:5px solid white;overflow:hidden" scrolling="no" frameborder="" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> </p>
+        <br>
+        <h4>No te vayas todavía …</h4>
+        <h4>Ya estando aquí, escuchemos algo …</h4>
+        <br>
+        <p class="lead">
+          <a target="_blank" href="https://radiooooo.com/" class="btn btn-lg btn-primary fw-bold border-white bg-white"> Radiooooo.com </a> 
+        </p>
+        <br>
+        <h4>Curioso, ¿No?</h4>
+        <p class="lead"> <img src="images/SrConejo.jpg" class="img-fluid" alt="IM01"> </p>
         <h4>De todo corazón, ¡ Muchas gracias por tu apoyo !</h4>
         <br>
         <p class="lead"> <img src="images/IMG01.jpg" class="img-fluid" alt="IM01"> </p>
@@ -105,5 +123,37 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
   </body>
+
+  <script>
+    var ctx=document.getElementById("TendProd").getContext("2d");
+    var TendProd=new Chart(ctx,
+    {
+      type:"polarArea",
+      data:
+      {
+        labels:['Baby [% Cubetas]','A [% Cubetas]','AA [% Cubetas]','AAA [% Cubetas]'],
+        datasets:
+        [{
+            label:'Areas',
+            data:[3,17,63,17],
+            backgroundColor:
+            [
+                'rgb(125,187,24,0.5)',
+                'rgb(125,187,24,0.7)',
+                'rgb(125,187,24,0.8)',
+                'rgb(125,187,24,0.6)'
+            ],
+            borderColor: 
+            [
+              'rgb(125,187,24)',
+              'rgb(125,187,24)',
+              'rgb(125,187,24)',
+              'rgb(125,187,24)'
+            ],
+            borderWidth: 3
+        }]
+      },
+    });
+  </script>
 
 </html>
